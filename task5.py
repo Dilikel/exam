@@ -1,6 +1,16 @@
-def f (x):
-    lists = [int(list) for list in str(x)]
-    x1 = int(lists[0]) + int(lists[2]) +int(lists[4])
-    x2 = int(lists[1]) + int(lists[3])
-    return  int(str(x1) + str(x2))
+#56533
+def f(n):
+    nums = [int(num) for num in str(n)]
+    sum_nums = sum(nums)
+    x = bin(n)[2:]
+    for i in range(3):
+        if sum_nums % 2 == 0:
+            x += '0'
+        else:
+            x += '1'
+        decimal_number = int(x, 2)
+        nums = [int(digit) for digit in str(decimal_number)]
+        sum_nums = sum(nums)
+    return int(x, 2)
 
+print(f(17))

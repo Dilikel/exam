@@ -80,10 +80,10 @@
 #                     print(z, y, x, w)
 
 
-# for x in range(2):
-#     for y in range(2):
-#         for z in range(2):
-#             for w in range(2):
-#                 for u in range(2):
-#                     if ((z <= w) and (y == (not x))) <= (u == (y or z)):
-#                         print(w, y, z, x, u)
+for x in range(2):
+    for y in range(2):
+        for z in range(2):
+            for w in range(2):
+                for u in range(2):
+                    if ((z <= w) and (y == (not x))) <= (u == (y or z)):
+                        print(w, y, z, x, u)
