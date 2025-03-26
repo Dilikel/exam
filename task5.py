@@ -4,5 +4,3 @@ def f (x):
     x2 = int(lists[1]) + int(lists[3])
     return  int(str(x1) + str(x2))
 
-
-
