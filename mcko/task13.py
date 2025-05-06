@@ -1,4 +1,4 @@
-f = open('13.txt').readlines()
+f = open(r'C:\Users\vladi\OneDrive\Документы\work\Proga\Python\exam\mcko\13.txt').readlines()
 
 m = [int(x) for x in f]
 
